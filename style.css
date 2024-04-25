@@ -7,6 +7,7 @@
 body {
   font-family: "Righteous", sans-serif;
   color: #333333;
+  background-color: #EEEEEE;
 }
 
 .header {
@@ -36,3 +37,40 @@ body {
   line-height: 21.09px;
   margin-top: -1px;
 }
+
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 414px;
+  height: 92px;
+  background-color: #FFFFFF;
+  color: black;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #CBCBCB;
+  width: 364px;
+  height: 61px;
+  border-radius: 50px;
+  border: 1px solid #CBCBCB;
+}
+
+.footer button p {
+  width: 60%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+}
+
