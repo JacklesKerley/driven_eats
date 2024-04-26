@@ -116,7 +116,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #000000;
-  margin: 0 auto;
+  margin: 0 14px;
 }
 
 .sobremesas,
@@ -126,6 +126,24 @@ body {
 
 .sobremesas {
   margin-bottom: calc(16px + 92px);
+}
+
+.selecionado {
+  position: relative;
+  box-shadow: 0px 0px 0px 5px #32B72F inset;
+}
+
+.checkmark {
+  display: none;
+}
+
+.selecionado .checkmark {
+  display: block;
+  font-size: 19px;
+  color: #32B72F;
+  position: absolute;
+  bottom: 14px;
+  right: 11px;
 }
 
 .footer {
@@ -160,3 +178,94 @@ body {
   text-align: center;
 }
 
+.fecharPedidoCor {
+  background-color: #32B72F !important;
+}
+
+.confirmacao {
+  background-color: #FFFFFFE5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 414px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.containerConfirmacao {
+  background-color: #50D074;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px 1px #00000040;
+  width: 377px;
+  height: 353px;
+  border-radius: 9px;
+  color: #FFFFFF;
+}
+
+.containerConfirmacao h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 21px;
+  margin-bottom: 15px;
+  height: 27px;
+}
+
+.containerConfirmacao .precos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 325px;
+  height: 27px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.total {
+  font-weight: 700 !important;
+}
+
+.confirmarCompra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 329px;
+  height: 52px;
+  border-radius: 100px;
+  margin-top: 24px;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.confirmarCompra p {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #50D074;
+}
+
+.cancelarPedido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 333px;
+  height: 52px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.confirmacao {
+  display: none;
+}
+
+.abrir{
+  display: flex;
+}
