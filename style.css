@@ -21,26 +21,112 @@ body {
   box-shadow: 0 4px #00000040;
   padding-left: 21px;
   position: fixed;
+  top: 0;
   z-index: 1;
 }
 
 .header h1 {
   font-size: 44px;
   font-weight: 400;
-  line-height: 54.63px;
 }
 
 .header span {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21.09px;
-  margin-top: -1px;
 }
 
+.conteudo {
+  margin-top: 125px;
+  width: 414px;
+}
 
+.tituloSecao {
+  font-size: 26px;
+  font-weight: 400;
+  padding-left: 19px;
+}
 
+.selecaoDeSobremesas,
+.selecaoDeBebidas,
+.selecaoDePratos {
+  display: flex;
+  align-items: center;
+  height: calc(216px + 17px + 17px);
+  padding: 0 8px;
+  overflow-x: scroll;
+}
 
+.selecaoDeSobremesas::-webkit-scrollbar,
+.selecaoDeBebidas::-webkit-scrollbar,
+.selecaoDePratos::-webkit-scrollbar {
+  display: none;
+}
+
+.sobremesa,
+.bebida,
+.prato {
+  display: flex;
+  flex-direction: column;
+  width: 172px;
+  height: 216px;
+  border-radius: 9px;
+  background-color: #FFFFFF;
+  margin: 0 8px;
+}
+
+.sobremesa img,
+.bebida img,
+.prato img {
+  width: 144px;
+  height: 87px;
+  border-radius: 4px;
+  margin: 18px 14px 8px;
+}
+
+.sobremesa h3,
+.bebida h3,
+.prato h3 {
+  width: 144px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 14px;
+}
+
+.sobremesa p,
+.bebida p,
+.prato p {
+  display: flex;
+  align-items: center;
+  width: 144px;
+  height: 39px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #A6A6A6;
+  margin: 6px 14px;
+}
+
+.sobremesa span,
+.bebida span,
+.prato span {
+  width: 144px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.sobremesas,
+.bebidas {
+  margin-top: 10px;
+}
+
+.sobremesas {
+  margin-bottom: calc(16px + 92px);
+}
 
 .footer {
   display: flex;
