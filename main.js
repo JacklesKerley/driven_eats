@@ -4,6 +4,7 @@ let bebidaEscolhida = ''
 let bebidaEscolhidaValor = ''
 let sobremesaEscolhida = ''
 let sobremesaEscolhidaValor = ''
+let total = 0
 
 
 function selecionarPrato(prato) {
@@ -55,7 +56,6 @@ function verificarSelecao() {
     btnFecharPedido.innerHTML = 'Fechar Pedido';
 
     comanda()
-
   }
 }
 
@@ -69,9 +69,9 @@ function comanda() {
   document.querySelector('.nomeDaSobremesa').innerHTML = sobremesaEscolhida
   document.querySelector('.precoDaSobremesa').innerHTML = sobremesaEscolhidaValor
 
-  let resultado = Number(pratoEscolhidoValor) + Number(bebidaEscolhidaValor) + Number(sobremesaEscolhidaValor)
+  total = Number(pratoEscolhidoValor) + Number(bebidaEscolhidaValor) + Number(sobremesaEscolhidaValor)
 
-  document.querySelector('.precoTotal').innerHTML = resultado.toFixed(2)
+  document.querySelector('.precoTotal').innerHTML = total.toFixed(2)
 
 }
 
@@ -79,4 +79,22 @@ function fecharPedido() {
   const confirme = document.querySelector('.confirmacao')
 
   confirme.classList.toggle('abrir')
+}
+
+function enviarMsgWhats() {
+
+  let msg = `Olá, gostaria de fazer o pedido:
+  - Prato: ${pratoEscolhido}
+  - Bebida: ${bebidaEscolhida}
+  - Sobremesa: ${sobremesaEscolhida}
+  Total: R$ ${total.toFixed(2)}`
+
+  let msgCodificada = encodeURIComponent(msg)
+
+  let numeroRestaurante = '5512999999999'
+
+  let urlWhats = `https://wa.me/${numeroRestaurante}?text=${msgCodificada}`
+
+  window.open(urlWhats)
+
 }
