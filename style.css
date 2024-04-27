@@ -251,6 +251,11 @@ body {
   color: #50D074;
 }
 
+.confirmarCompra p:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .cancelarPedido {
   display: flex;
   justify-content: center;
