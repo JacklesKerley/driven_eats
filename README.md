@@ -37,4 +37,4 @@ Aplicação para pedido de comida.
 
 <img width="300" src="./gif/gravacao.gif">
 
-Link: https://projeto-driven-eats.onrender.com/
+Link: https://driven-eats.onrender.com/
